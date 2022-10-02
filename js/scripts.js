@@ -1,6 +1,6 @@
-//061edab5c8cdf7cc0ac0f07345d19233
+//
 
-const apiKey = "061edab5c8cdf7cc0ac0f07345d19233";
+const apiKey = "";
 const apiCountryURL = "https://countryflagsapi.com/png/";
 
 const cityInput = document.querySelector("#city-input");
@@ -51,10 +51,9 @@ searchBtn.addEventListener("click", (e) => {
 });
 
 cityInput.addEventListener("keyup", (e) => {
-
-  if(e.code === "Enter"){
+  if (e.code === "Enter") {
     const city = cityInput.value;
-    
-    showWeatherData(city);
 
-  }});
+    showWeatherData(city);
+  }
+});
